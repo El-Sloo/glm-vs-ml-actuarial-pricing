@@ -50,7 +50,7 @@ However, Random Forest shouldn't be tossed aside either. It works great as a dia
 
 ## Author: David Sebastián Rodríguez Guzmán
 
-> 🌐 **[Read the English version above](#-english-version)**
+> 🌐 **[Read the English version above]**
 
 ---
 
