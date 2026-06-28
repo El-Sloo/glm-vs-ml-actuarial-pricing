@@ -50,6 +50,12 @@ However, Random Forest shouldn't be tossed aside either. It works great as a dia
 
 ## Author: David Sebastián Rodríguez Guzmán
 
+> 🌐 **[Read the English version below](#-english-version)**
+
+---
+
+## 🇲🇽 Versión en Español
+
 # 🚗 GLM vs Machine Learning: Modelado de Frecuencia de Siniestros
 
 <p align="center">
