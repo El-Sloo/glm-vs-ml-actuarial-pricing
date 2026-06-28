@@ -49,4 +49,4 @@ metodología de evaluación: **Poisson**, **Binomial Negativa (NB2)** y **Random
 
 Para el modelado de frecuencia de siniestros, El algoritmo de Machine Learning que utilic'e no demuestra una ventaja predictiva abrumadora que justifique el reemplazo total de los GLM. Los Modelos Lineales Generalizados siguen siendo superiores gracias a que sus coeficientes son directamente interpretables, lo cual es vital para justificar el cálculo de primas ante entes reguladores y clientes.  No obstante, herramientas como Random Forest no deben descartarse; fungen como excelentes recursos de diagnóstico para detectar variables con comportamiento no lineal (como VehAge), indicando dónde los GLM tradicionales necesitan transformaciones matemáticas adicionales para perfeccionar la tarificación del riesgo. 
 
-Autor: David Sebastián Rodríguez Guzmán
+## Autor: David Sebastián Rodríguez Guzmán
