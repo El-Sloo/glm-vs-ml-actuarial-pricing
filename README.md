@@ -35,7 +35,7 @@ metodología de evaluación: **Poisson**, **Binomial Negativa (NB2)** y **Random
 | 🧹 **Limpieza y pipeline** | `ColumnTransformer` reproducible para variables numéricas y categóricas |
 | 📐 **Modelos estadísticos** | Poisson y NB2 ajustados por máxima verosimilitud (implementados desde cero y con `statsmodels`) |
 | 🤖 **Machine Learning** | Random Forest entrenado sobre tasa de siniestralidad, corrigiendo sobreajuste y sesgo por exposición |
-| 📊 **Evaluación** | Deviance, MAE, R² (Tweedie) y ratio predicho/real, sobre conjunto de prueba independiente |
+| 📊 **Evaluación** | Deviance, MAE, R² (Tweedie) y ratio predicho/real |
 | 🔍 **Interpretabilidad** | Comparación de coeficientes del GLM vs feature importance de Random Forest |
 
 ## 📈 Resultados clave
