@@ -32,7 +32,7 @@ metodología de evaluación: **Poisson**, **Binomial Negativa (NB2)** y **Random
 
 | Etapa | Qué se hizo |
 |---|---|
-| 🧹 **Limpieza y pipeline** | `ColumnTransformer` reproducible para variables numéricas y categóricas |
+| 🧹 **Limpieza y pipeline** | Clase `Cleaning` personalizada que elimina columnas con fuga de datos y transforma variables sesgadas, integrada en un `ColumnTransformer` reproducible con imputación, escalado y codificación one-hot para variables numéricas y categóricas |
 | 📐 **Modelos estadísticos** | Poisson y NB2 ajustados por máxima verosimilitud (implementados desde cero y con `statsmodels`) |
 | 🤖 **Machine Learning** | Random Forest entrenado sobre tasa de siniestralidad, corrigiendo sobreajuste y sesgo por exposición |
 | 📊 **Evaluación** | Deviance, MAE, R² (Tweedie) y ratio predicho/real |
