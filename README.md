@@ -41,7 +41,7 @@ This project tests if Machine Learning algorithms can actually replace Generaliz
 |---|---|---|---|
 | AIC | 249,724 | **244,839** | — |
 | Deviance (test) | — | 0.350 | **0.326** |
-| $R^2$ (Tweedie) | — | 0.007 | **0.075** |
+| R^2 (Tweedie) | — | 0.007 | **0.075** |
 | Pred/Actual Ratio | — | 1.037 | **1.003** |
 
 After testing, the Machine Learning algorithm didn't show a huge predictive advantage that would justify throwing away GLMs completely. GLMs are still better because their coefficients are directly interpretable, which is a must-have when you need to justify premium prices to regulators and clients. 
