@@ -1,3 +1,55 @@
+# 🚗 GLM vs Machine Learning: Claim Frequency Modeling
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white">
+  <img src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white">
+  <img src="https://img.shields.io/badge/statsmodels-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-completed-success?style=flat-square">
+  <img src="https://img.shields.io/badge/dataset-freMTPL2-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/observations-679%2C513-orange?style=flat-square">
+</p>
+
+## Can Machine Learning replace Generalized Linear Models for predicting claim frequency?
+
+Evidence from the French car insurance sector.
+
+---
+
+## 📋 Summary
+
+This project tests if Machine Learning algorithms can actually replace Generalized Linear Models (GLMs), which are the standard tool used by insurance companies to predict how often people will file claims. Using the *freMTPL2* dataset, I compared three different approaches: **Poisson**, **Negative Binomial (NB2)**, and **Random Forest**.
+
+## 🔬 Methodology
+
+| Stage | What I did |
+|---|---|
+| 🧹 **Data Cleaning & Pipeline** | Wrote a custom `Cleaning` class to drop columns that cause data leakage and fix skewed variables. This is wrapped in a `ColumnTransformer` to handle missing values, scaling, and one-hot encoding automatically. |
+| 📐 **Statistical Models** | Poisson and NB2 fitted using maximum likelihood. I built them from scratch and validated them against `statsmodels`. |
+| 🤖 **Machine Learning** | Random Forest trained on claim frequency, with corrections to fix overfitting and exposure bias. |
+| 📊 **Evaluation** | Deviance, MAE, $R^2$ (Tweedie), and the predicted vs actual ratio. |
+| 🔍 **Interpretability** | Compared the GLM coefficients directly against the Random Forest feature importance. |
+
+## 📈 Key Results
+
+| Metric | Poisson | NB2 | Random Forest |
+|---|---|---|---|
+| AIC | 249,724 | **244,839** | — |
+| Deviance (test) | — | 0.350 | **0.326** |
+| $R^2$ (Tweedie) | — | 0.007 | **0.075** |
+| Pred/Actual Ratio | — | 1.037 | **1.003** |
+
+After testing, the Machine Learning algorithm didn't show a huge predictive advantage that would justify throwing away GLMs completely. GLMs are still better because their coefficients are directly interpretable, which is a must-have when you need to justify premium prices to regulators and clients. 
+
+However, Random Forest shouldn't be tossed aside either. It works great as a diagnostic tool to spot non-linear variables (like vehicle age). It basically tells you exactly where your traditional GLM needs extra math transformations to price risk better.
+
+## Author: David Sebastián Rodríguez Guzmán
+
 # 🚗 GLM vs Machine Learning: Modelado de Frecuencia de Siniestros
 
 <p align="center">
