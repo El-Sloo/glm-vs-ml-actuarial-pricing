@@ -24,7 +24,7 @@ Evidencia desde el sector asegurador de automóviles francés 🇫🇷
 ## 📋 Resumen
 
 Este proyecto evalúa si los algoritmos de Machine Learning pueden sustituir a los Modelos Lineales 
-Generalizados (GLM) en el modelado de frecuencia de siniestros automotrices. Usando el dataset 
+Generalizados (GLM) los cuales son el estandar general y normativo para el modelado de frecuencia de siniestros automotrices. Usando el dataset 
 *French Motor Third-Party Liability Claims* (freMTPL2), se comparan tres enfoques bajo la misma 
 metodología de evaluación: **Poisson**, **Binomial Negativa (NB2)** y **Random Forest Regressor**.
 
