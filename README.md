@@ -30,7 +30,7 @@ This project tests if Machine Learning algorithms can actually replace Generaliz
 | Stage | What I did |
 |---|---|
 | 🧹 **Data Cleaning & Pipeline** | Wrote a custom `Cleaning` class to drop columns that cause data leakage and fix skewed variables. This is wrapped in a `ColumnTransformer` to handle missing values, scaling, and one-hot encoding automatically. |
-| 📐 **Statistical Models** | Poisson and NB2 fitted using maximum likelihood. I built them from scratch and validated them against `statsmodels`. |
+| 📐 **Statistical Models** | Poisson and NB2 fitted using maximum likelihood. I built them from zero and validated them against `statsmodels`. |
 | 🤖 **Machine Learning** | Random Forest trained on claim frequency, with corrections to fix overfitting and exposure bias. |
 | 📊 **Evaluation** | Deviance, MAE, $R^2$ (Tweedie), and the predicted vs actual ratio. |
 | 🔍 **Interpretability** | Compared the GLM coefficients directly against the Random Forest feature importance. |
